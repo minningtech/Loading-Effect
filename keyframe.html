@@ -1,0 +1,41 @@
+<style>
+* {
+  padding: 5px;
+  margin-left: 1.5%;
+ 
+}
+.box-size {
+  
+  padding: 5px;
+  height: 20px;
+  width:90%;
+  text-align: center;
+  border: 2px silver solid;
+  border-radius: 50px;
+  background: #f2f2f2;
+  box-shadow: rgb(194,196,196) 1px 1px 2px 3px;
+}
+  .keymovemt {
+   
+    height: 10px;
+    width: 90px;
+    border-radius: 50px;
+    background: linear-gradient(to right,dodgerblue,yellow);
+    animation: move 4s infinite;
+    box-shadow: rgb(115,115,115) 2px 2px 1px;
+    position: relative;
+  }
+  
+  @keyframes move {
+   0%   {top: 0px; left: 0px; background:linear-gradient(to right,dodgerblue,yellow);}
+  50%  {top: 0px; left: 180px; background:linear-gradient(to left,purple,red);}
+  100%  {
+    top: 0px; left:0px; background:linear-gradient(to right,dodgerblue,yellow);
+  }
+}
+
+</style>
+<div class="box-size">
+<div class="keymovemt">
+</div>
+</div>
